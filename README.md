@@ -1,6 +1,5 @@
 www.gianlucaguarini.com
 ===================
-My website is build using [Yeoman](http://yeoman.io/)
 
 Copyright Gianluca Guarini 2013
 
