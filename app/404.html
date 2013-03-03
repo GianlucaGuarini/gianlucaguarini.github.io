@@ -2,156 +2,119 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Page Not Found :(</title>
+        <title>Page Not Found - Try again</title>
         <style>
-            ::-moz-selection {
-                background: #b3d4fc;
-                text-shadow: none;
+           @import url(http://fonts.googleapis.com/css?family=Oswald);
+body, html {
+            font-family: 'Oswald', sans-serif;
+                overflow:hidden;
+                height:100%;
+                width:100%;
+                background:black;
+                color:#333;
+                font-size:18px;
+                background:black;
+                
+                -webkit-user-select: none;
             }
-
-            ::selection {
-                background: #b3d4fc;
-                text-shadow: none;
+            video {
+                position:absolute;
+                opacity:0.25;
             }
-
-            html {
-                padding: 30px 10px;
-                font-size: 20px;
-                line-height: 1.4;
-                color: #737373;
-                background: #f0f0f0;
-                -webkit-text-size-adjust: 100%;
-                -ms-text-size-adjust: 100%;
-            }
-
-            html,
-            input {
-                font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-            }
-
-            body {
-                max-width: 500px;
-                _width: 500px;
-                padding: 30px 20px 50px;
-                border: 1px solid #b3b3b3;
-                border-radius: 4px;
-                margin: 0 auto;
-                box-shadow: 0 1px 10px #a7a7a7, inset 0 1px 0 #fff;
-                background: #fcfcfc;
-            }
-
-            h1 {
-                margin: 0 10px;
-                font-size: 50px;
-                text-align: center;
-            }
-
-            h1 span {
-                color: #bbb;
-            }
-
-            h3 {
-                margin: 1.5em 0 0.5em;
-            }
-
-            p {
-                margin: 1em 0;
-            }
-
-            ul {
-                padding: 0 0 0 40px;
-                margin: 1em 0;
-            }
-
             .container {
-                max-width: 380px;
-                _width: 380px;
-                margin: 0 auto;
+                position: absolute;
+                top:50%;
+                left:50%;
+                margin:-250px 0 0 -250px;
+                height:500px;
+                text-align: center;
+                width:500px;
+            
             }
-
-            /* google search */
-
-            #goog-fixurl ul {
-                list-style: none;
-                padding: 0;
-                margin: 0;
-            }
-
-            #goog-fixurl form {
-                margin: 0;
-            }
-
-            #goog-wm-qt,
-            #goog-wm-sb {
-                border: 1px solid #bbb;
-                font-size: 16px;
-                line-height: normal;
-                vertical-align: top;
-                color: #444;
-                border-radius: 2px;
-            }
-
-            #goog-wm-qt {
-                width: 220px;
-                height: 20px;
-                padding: 5px;
-                margin: 5px 10px 0 0;
-                box-shadow: inset 0 1px 1px #ccc;
-            }
-
-            #goog-wm-sb {
-                display: inline-block;
-                height: 32px;
-                padding: 0 10px;
-                margin: 5px 0 0;
-                white-space: nowrap;
-                cursor: pointer;
-                background-color: #f5f5f5;
-                background-image: -webkit-linear-gradient(rgba(255,255,255,0), #f1f1f1);
-                background-image: -moz-linear-gradient(rgba(255,255,255,0), #f1f1f1);
-                background-image: -ms-linear-gradient(rgba(255,255,255,0), #f1f1f1);
-                background-image: -o-linear-gradient(rgba(255,255,255,0), #f1f1f1);
-                -webkit-appearance: none;
-                -moz-appearance: none;
-                appearance: none;
-                *overflow: visible;
-                *display: inline;
-                *zoom: 1;
-            }
-
-            #goog-wm-sb:hover,
-            #goog-wm-sb:focus {
-                border-color: #aaa;
-                box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-                background-color: #f8f8f8;
-            }
-
-            #goog-wm-qt:hover,
-            #goog-wm-qt:focus {
-                border-color: #105cb6;
-                outline: 0;
-                color: #222;
-            }
-
-            input::-moz-focus-inner {
-                padding: 0;
-                border: 0;
+            i {
+                font-style: normal;
+                font-size:200px;
             }
         </style>
+
     </head>
     <body>
         <div class="container">
             <h1>Not found <span>:(</span></h1>
-            <p>Sorry, but the page you were trying to view does not exist.</p>
-            <p>It looks like this was the result of either:</p>
-            <ul>
-                <li>a mistyped address</li>
-                <li>an out-of-date link</li>
-            </ul>
-            <script>
-                var GOOG_FIXURL_LANG = (navigator.language || '').slice(0,2),GOOG_FIXURL_SITE = location.host;
-            </script>
-            <script src="http://linkhelp.clients.google.com/tbproxy/lh/wm/fixurl.js"></script>
+                <p>Sorry, but the page you were trying to view does not exist.</p>
+
+                <i>404</i>
+            </div>
+    <a href="http://gianlucaguarini.com" target="_blank">
+                <video autoplay="autoplay"  preload loop="loop">
+                    <source src="http://gianlucaguarini.com/videos/noise.mp4" />
+                    <source src="http://gianlucaguarini.com/videos/noise.webm" />
+                    <source src="http://gianlucaguarini.com/videos/noise.ogv" />
+                </video>
+            </a>
         </div>
+        <script src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script>
+        var parent = $(window),
+        $video = $("video");
+        // https://raw.github.com/brianreavis/jquery-fitToParent/master/jquery.fittoparent.js
+        var resize = function () {
+            var o = {
+                fitX: true,
+                fitY: true,
+                fillArea: false,
+                allowEnlargement: true
+            };
+            
+            parentWidth = parent.innerWidth(),
+            parentHeight = parent.innerHeight();
+
+            var originalSize = $video.data('original-size');
+            if (!originalSize) {
+                originalSize = {
+                    width:  1280,
+                    height: 720
+                };
+                $video.data('original-size', originalSize);
+            }
+
+            var currentSize = {
+                width:  originalSize.width,
+                height: originalSize.height
+            };
+
+            var scale = 1;
+            if (o.fitX && (o.allowEnlargement || currentSize.width > parentWidth)) {
+                scale = parentWidth / currentSize.width;
+                currentSize.width = Math.floor(currentSize.width * scale);
+                currentSize.height = Math.floor(currentSize.height * scale);
+            }
+
+            if (o.fitY) {
+                var doScale = currentSize.height > parentHeight;
+                var newScale = parentHeight / currentSize.height;
+                if (o.fillArea) doScale = currentSize.height < parentHeight;
+                if (o.allowEnlargement) doScale = newScale > scale;
+                if (doScale) {
+                    currentSize.width = Math.floor(currentSize.width * newScale);
+                    currentSize.height = Math.floor(currentSize.height * newScale);
+                    scale = newScale;
+                }
+            }
+
+            $video.css({
+                top: Math.round((parentHeight - currentSize.height) / 2),
+                left: Math.round((parentWidth - currentSize.width) / 2),
+                width: currentSize.width,
+                height: currentSize.height,
+                
+            });
+        }
+        
+        
+        $(window).on("resize",resize);
+    
+        resize();
+        </script>
     </body>
 </html>
