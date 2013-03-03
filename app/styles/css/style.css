@@ -1,0 +1,2567 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,700");
+/*
+ * Bootstrap v0.0.1
+ *
+ * Copyright 2012 Gold Interactive
+ * 
+ * 
+ * Designer and manatained by Gold Interactive
+ * 
+ */
+@-moz-keyframes rotator {
+  /* line 5, ../sass/include/_animation.scss */
+  0% {
+    top: -400px;
+  }
+
+  /* line 8, ../sass/include/_animation.scss */
+  10% {
+    top: 200px;
+  }
+
+  /* line 11, ../sass/include/_animation.scss */
+  100% {
+    top: 200px;
+  }
+}
+
+@-webkit-keyframes rotator {
+  /* line 5, ../sass/include/_animation.scss */
+  0% {
+    top: -400px;
+  }
+
+  /* line 8, ../sass/include/_animation.scss */
+  10% {
+    top: 200px;
+  }
+
+  /* line 11, ../sass/include/_animation.scss */
+  100% {
+    top: 200px;
+  }
+}
+
+@-o-keyframes rotator {
+  /* line 5, ../sass/include/_animation.scss */
+  0% {
+    top: -400px;
+  }
+
+  /* line 8, ../sass/include/_animation.scss */
+  10% {
+    top: 200px;
+  }
+
+  /* line 11, ../sass/include/_animation.scss */
+  100% {
+    top: 200px;
+  }
+}
+
+@-ms-keyframes rotator {
+  /* line 5, ../sass/include/_animation.scss */
+  0% {
+    top: -400px;
+  }
+
+  /* line 8, ../sass/include/_animation.scss */
+  10% {
+    top: 200px;
+  }
+
+  /* line 11, ../sass/include/_animation.scss */
+  100% {
+    top: 200px;
+  }
+}
+
+@keyframes rotator {
+  /* line 5, ../sass/include/_animation.scss */
+  0% {
+    top: -400px;
+  }
+
+  /* line 8, ../sass/include/_animation.scss */
+  10% {
+    top: 200px;
+  }
+
+  /* line 11, ../sass/include/_animation.scss */
+  100% {
+    top: 200px;
+  }
+}
+
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/*
+ * Corrects `block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+/* line 21, ../sass/include/_reset.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/*
+ * Corrects `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+/* line 31, ../sass/include/_reset.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/*
+ * Prevents modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 42, ../sass/include/_reset.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/*
+ * Addresses styling for `hidden` attribute not present in IE 7/8/9, Firefox 3,
+ * and Safari 4.
+ * Known issue: no IE 6 support.
+ */
+/* line 53, ../sass/include/_reset.scss */
+[hidden] {
+  display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/*
+ * 1. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ * 2. Prevents iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 68, ../sass/include/_reset.scss */
+html {
+  font-size: 100%;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/*
+ * Addresses `font-family` inconsistency between `textarea` and other form
+ * elements.
+ */
+/* line 83, ../sass/include/_reset.scss */
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+
+/*
+ * Addresses margins handled incorrectly in IE 6/7.
+ */
+/* line 91, ../sass/include/_reset.scss */
+body {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/*
+ * Addresses `outline` inconsistency between Chrome and other browsers.
+ */
+/* line 103, ../sass/include/_reset.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers.
+ */
+/* line 112, ../sass/include/_reset.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/*
+ * Addresses font sizes and margins set differently in IE 6/7.
+ * Addresses font sizes within `section` and `article` in Firefox 4+, Safari 5,
+ * and Chrome.
+ */
+/* line 126, ../sass/include/_reset.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* line 131, ../sass/include/_reset.scss */
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+
+/* line 136, ../sass/include/_reset.scss */
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+
+/* line 141, ../sass/include/_reset.scss */
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+
+/* line 146, ../sass/include/_reset.scss */
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+
+/* line 151, ../sass/include/_reset.scss */
+h6 {
+  font-size: 0.75em;
+  margin: 2.33em 0;
+}
+
+/*
+ * Addresses styling not present in IE 7/8/9, Safari 5, and Chrome.
+ */
+/* line 160, ../sass/include/_reset.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/*
+ * Addresses style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
+ */
+/* line 169, ../sass/include/_reset.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 173, ../sass/include/_reset.scss */
+blockquote {
+  margin: 1em 40px;
+}
+
+/*
+ * Addresses styling not present in Safari 5 and Chrome.
+ */
+/* line 181, ../sass/include/_reset.scss */
+dfn {
+  font-style: italic;
+}
+
+/*
+ * Addresses styling not present in IE 6/7/8/9.
+ */
+/* line 189, ../sass/include/_reset.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/*
+ * Addresses margins set differently in IE 6/7.
+ */
+/* line 199, ../sass/include/_reset.scss */
+p,
+pre {
+  margin: 1em 0;
+}
+
+/*
+ * Corrects font family set oddly in IE 6, Safari 4/5, and Chrome.
+ */
+/* line 210, ../sass/include/_reset.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  _font-family: "courier new", monospace;
+  font-size: 1em;
+}
+
+/*
+ * Improves readability of pre-formatted text in all browsers.
+ */
+/* line 220, ../sass/include/_reset.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/*
+ * Addresses CSS quotes not supported in IE 6/7.
+ */
+/* line 230, ../sass/include/_reset.scss */
+q {
+  quotes: none;
+}
+
+/*
+ * Addresses `quotes` property not supported in Safari 4.
+ */
+/* line 239, ../sass/include/_reset.scss */
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+/*
+ * Addresses inconsistent and variable font size in all browsers.
+ */
+/* line 248, ../sass/include/_reset.scss */
+small {
+  font-size: 80%;
+}
+
+/*
+ * Prevents `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 257, ../sass/include/_reset.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 264, ../sass/include/_reset.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 268, ../sass/include/_reset.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+/*
+ * Addresses margins set differently in IE 6/7.
+ */
+/* line 283, ../sass/include/_reset.scss */
+dl,
+menu,
+ol,
+ul {
+  margin: 1em 0;
+}
+
+/* line 287, ../sass/include/_reset.scss */
+dd {
+  margin: 0 0 0 40px;
+}
+
+/*
+ * Addresses paddings set differently in IE 6/7.
+ */
+/* line 297, ../sass/include/_reset.scss */
+menu,
+ol,
+ul {
+  padding: 0 0 0 40px;
+}
+
+/*
+ * Corrects list images handled incorrectly in IE 7.
+ */
+/* line 306, ../sass/include/_reset.scss */
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * 1. Removes border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+ * 2. Improves image quality when scaled in IE 7.
+ */
+/* line 320, ../sass/include/_reset.scss */
+img {
+  border: 0;
+  /* 1 */
+  -ms-interpolation-mode: bicubic;
+  /* 2 */
+}
+
+/*
+ * Corrects overflow displayed oddly in IE 9.
+ */
+/* line 329, ../sass/include/_reset.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/*
+ * Addresses margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+ */
+/* line 341, ../sass/include/_reset.scss */
+figure {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/*
+ * Corrects margin displayed oddly in IE 6/7.
+ */
+/* line 353, ../sass/include/_reset.scss */
+form {
+  margin: 0;
+}
+
+/*
+ * Define consistent border, margin, and padding.
+ */
+/* line 361, ../sass/include/_reset.scss */
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/*
+ * 1. Corrects color not being inherited in IE 6/7/8/9.
+ * 2. Corrects text not wrapping in Firefox 3.
+ * 3. Corrects alignment displayed oddly in IE 6/7.
+ */
+/* line 373, ../sass/include/_reset.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  white-space: normal;
+  /* 2 */
+  *margin-left: -7px;
+  /* 3 */
+}
+
+/*
+ * 1. Corrects font size not being inherited in all browsers.
+ * 2. Addresses margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ *    and Chrome.
+ * 3. Improves appearance and consistency in all browsers.
+ */
+/* line 390, ../sass/include/_reset.scss */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  vertical-align: baseline;
+  /* 3 */
+  *vertical-align: middle;
+  /* 3 */
+}
+
+/*
+ * Addresses Firefox 3+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 403, ../sass/include/_reset.scss */
+button,
+input {
+  line-height: normal;
+}
+
+/*
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Corrects inability to style clickable `input` types in iOS.
+ * 3. Improves usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Removes inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+/* line 420, ../sass/include/_reset.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+  *overflow: visible;
+  /* 4 */
+}
+
+/*
+ * Re-set default cursor for disabled elements.
+ */
+/* line 431, ../sass/include/_reset.scss */
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+/*
+ * 1. Addresses box sizing set to content-box in IE 8/9.
+ * 2. Removes excess padding in IE 8/9.
+ * 3. Removes excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+/* line 443, ../sass/include/_reset.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+  *height: 13px;
+  /* 3 */
+  *width: 13px;
+  /* 3 */
+}
+
+/*
+ * 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 456, ../sass/include/_reset.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/*
+ * Removes inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+/* line 469, ../sass/include/_reset.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+ * Removes inner padding and border in Firefox 3+.
+ */
+/* line 478, ../sass/include/_reset.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/*
+ * 1. Removes default vertical scrollbar in IE 6/7/8/9.
+ * 2. Improves readability and alignment in all browsers.
+ */
+/* line 488, ../sass/include/_reset.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/*
+ * Remove most spacing between table cells.
+ */
+/* line 501, ../sass/include/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "RalewayThin";
+  src: url("fonts/raleway_thin-webfont.eot");
+  src: url("fonts/raleway_thin-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/raleway_thin-webfont.woff") format("woff"), url("fonts/raleway_thin-webfont.ttf") format("truetype"), url("fonts/raleway_thin-webfont.svg#RalewayThin") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Elusive-Icons';
+  src: url("fonts/Elusive-Icons.eot");
+  src: url("fonts/Elusive-Icons.eot?#iefix") format("embedded-opentype"), url("fonts/Elusive-Icons.woff") format("woff"), url("fonts/Elusive-Icons.ttf") format("truetype"), url("fonts/Elusive-Icons.svg#Elusive-Icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+	 Base styles: opinionated defaults
+	 ========================================================================== */
+/* line 17, ../sass/include/_common.scss */
+html,
+button,
+input,
+select,
+textarea {
+  color: #222;
+}
+
+/* line 21, ../sass/include/_common.scss */
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* line 26, ../sass/include/_common.scss */
+body {
+  font-size: 1em;
+  font-family: "Open Sans", sans-serif;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjEwMCUiIGN5PSIxMDAlIiByPSIxMDAiPjxzdG9wIG9mZnNldD0iMzAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjYWFhYWFhIi8+PC9yYWRpYWxHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+  background-size: 100%;
+  background-image: -webkit-gradient(radial, 100% 100%, 0, 100% 100%, 100, color-stop(30%, #ffffff), color-stop(100%, #aaaaaa));
+  background-image: -webkit-radial-gradient(100% 100%, #ffffff 30%, #aaaaaa 100%);
+  background-image: -moz-radial-gradient(100% 100%, #ffffff 30%, #aaaaaa 100%);
+  background-image: -o-radial-gradient(100% 100%, #ffffff 30%, #aaaaaa 100%);
+  background-image: radial-gradient(100% 100%, #ffffff 30%, #aaaaaa 100%);
+}
+
+/* line 34, ../sass/include/_common.scss */
+h1, h2, h3, h4 {
+  font-family: "RalewayThin", sans-serif;
+  font-weight: normal;
+}
+
+/* line 38, ../sass/include/_common.scss */
+b, strong {
+  font-weight: 700;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+/* line 48, ../sass/include/_common.scss */
+::-moz-selection {
+  background: black;
+  text-shadow: none;
+}
+
+/* line 53, ../sass/include/_common.scss */
+::selection {
+  background: black;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+/* line 62, ../sass/include/_common.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+/* line 75, ../sass/include/_common.scss */
+img {
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+/* line 88, ../sass/include/_common.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+/* line 98, ../sass/include/_common.scss */
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+	 Chrome Frame prompt
+	 ========================================================================== */
+/* line 106, ../sass/include/_common.scss */
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* line 113, ../sass/include/_common.scss */
+#Viewport {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+/* line 120, ../sass/include/_common.scss */
+.cyan {
+  color: #00b9e3;
+}
+/* line 122, ../sass/include/_common.scss */
+.cyan .content .bg:before {
+  background: #00b9e3;
+}
+/* line 125, ../sass/include/_common.scss */
+.cyan a:hover, .cyan .plus:hover {
+  color: #00b9e3;
+}
+
+/* line 129, ../sass/include/_common.scss */
+.magenta {
+  color: #e63587;
+}
+/* line 131, ../sass/include/_common.scss */
+.magenta .content .bg:before {
+  background: #e63587;
+}
+/* line 134, ../sass/include/_common.scss */
+.magenta a:hover, .magenta .plus:hover {
+  color: #e63587;
+}
+
+/* line 138, ../sass/include/_common.scss */
+.orange {
+  color: #ff9d00;
+}
+/* line 140, ../sass/include/_common.scss */
+.orange .content .bg:before {
+  background: #ff9d00;
+}
+/* line 143, ../sass/include/_common.scss */
+.orange a:hover, .orange .plus:hover {
+  color: #ff9d00;
+}
+
+/* line 147, ../sass/include/_common.scss */
+.green {
+  color: #35e655;
+}
+/* line 149, ../sass/include/_common.scss */
+.green .content .bg:before {
+  background: #35e655;
+}
+/* line 152, ../sass/include/_common.scss */
+.green a:hover, .green .plus:hover {
+  color: #35e655;
+}
+
+/* line 156, ../sass/include/_common.scss */
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  margin: -100px 0 0 -100px;
+  text-align: center;
+  color: white;
+  z-index: 2;
+  width: 200px;
+  height: 200px;
+}
+/* line 165, ../sass/include/_common.scss */
+.content .plus {
+  position: relative;
+  font-family: "RalewayThin", sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  display: block;
+  cursor: pointer;
+  width: 30px;
+  height: 40px;
+  margin: 0 auto;
+  font-style: normal;
+  z-index: 1;
+}
+/* line 179, ../sass/include/_common.scss */
+.content h1 {
+  font-size: 27px;
+  line-height: 188px;
+  margin: 0;
+  width: 200px;
+  position: absolute;
+}
+/* line 185, ../sass/include/_common.scss */
+.content h1:before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 56%;
+  top: 5%;
+  width: 1px;
+  height: 180px;
+  -webkit-transform: rotate(-13deg);
+  -moz-transform: rotate(-13deg);
+  -ms-transform: rotate(-13deg);
+  -o-transform: rotate(-13deg);
+  transform: rotate(-13deg);
+  background: #222222;
+}
+/* line 196, ../sass/include/_common.scss */
+.content h2 {
+  position: relative;
+  margin: 108px 0 60px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  z-index: 1;
+}
+/* line 204, ../sass/include/_common.scss */
+.content .bg {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  overflow: hidden;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* line 211, ../sass/include/_common.scss */
+.content .bg:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: black;
+  margin: 1px;
+  width: 198px;
+  height: 198px;
+}
+/* line 219, ../sass/include/_common.scss */
+.content .bg:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: -400px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-animation: 18s ease-in 1s infinite rotator;
+  -moz-animation: 18s ease-in 1s infinite rotator;
+  -ms-animation: 18s ease-in 1s infinite rotator;
+  -o-animation: 18s ease-in 1s infinite rotator;
+  animation: 18s ease-in 1s infinite rotator;
+  width: 100px;
+  height: 500px;
+}
+
+/* line 1, ../sass/include/_icons.scss */
+[data-icon]:before {
+  font-family: 'Elusive-Icons';
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 11, ../sass/include/_icons.scss */
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: 'Elusive-Icons';
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 24, ../sass/include/_icons.scss */
+.isIe [class^="icon-"]:before,
+.isIe [class*=" icon-"]:before {
+  margin-top: -250px;
+}
+
+/* line 29, ../sass/include/_icons.scss */
+a [class^="icon-"],
+a [class*=" icon-"] {
+  display: inline-block;
+  text-decoration: inherit;
+}
+
+/* makes the font 33% larger relative to the icon container */
+/* line 35, ../sass/include/_icons.scss */
+.icon-large:before {
+  vertical-align: middle;
+  font-size: 1.33em;
+}
+
+/* line 43, ../sass/include/_icons.scss */
+.btn [class^="icon-"],
+.btn [class*=" icon-"],
+.nav-tabs [class^="icon-"],
+.nav-tabs [class*=" icon-"] {
+  /* keeps button heights with and without icons the same */
+  line-height: .9em;
+}
+
+/* line 49, ../sass/include/_icons.scss */
+li [class^="icon-"],
+li [class*=" icon-"] {
+  display: inline-block;
+  width: 1.25em;
+  text-align: center;
+}
+
+/* line 56, ../sass/include/_icons.scss */
+li .icon-large:before,
+li .icon-large:before {
+  /* 1.5 increased font size for icon-large * 1.25 width */
+  width: 1.875em;
+}
+
+/* line 61, ../sass/include/_icons.scss */
+ul.icons {
+  list-style-type: none;
+  margin-left: 2em;
+  text-indent: -.8em;
+}
+
+/* line 68, ../sass/include/_icons.scss */
+ul.icons li [class^="icon-"],
+ul.icons li [class*=" icon-"] {
+  width: .8em;
+}
+
+/* line 73, ../sass/include/_icons.scss */
+ul.icons li .icon-large:before,
+ul.icons li .icon-large:before {
+  /* 1.5 increased font size for icon-large * 1.25 width */
+  vertical-align: initial;
+}
+
+/* line 78, ../sass/include/_icons.scss */
+.btn-large [class^="icon-"], .btn-large [class*=" icon-"] {
+  margin-top: 0;
+}
+
+/* line 82, ../sass/include/_icons.scss */
+.icon-zoom-out:before {
+  content: "\e000";
+}
+
+/* line 83, ../sass/include/_icons.scss */
+.icon-zoom-in:before {
+  content: "\e001";
+}
+
+/* line 84, ../sass/include/_icons.scss */
+.icon-youtube:before {
+  content: "\e002";
+}
+
+/* line 85, ../sass/include/_icons.scss */
+.icon-wrench-alt:before {
+  content: "\e003";
+}
+
+/* line 86, ../sass/include/_icons.scss */
+.icon-wrench:before {
+  content: "\e004";
+}
+
+/* line 87, ../sass/include/_icons.scss */
+.icon-wordpress:before {
+  content: "\e005";
+}
+
+/* line 88, ../sass/include/_icons.scss */
+.icon-wheelchair:before {
+  content: "\e006";
+}
+
+/* line 89, ../sass/include/_icons.scss */
+.icon-website-alt:before {
+  content: "\e007";
+}
+
+/* line 90, ../sass/include/_icons.scss */
+.icon-website:before {
+  content: "\e008";
+}
+
+/* line 91, ../sass/include/_icons.scss */
+.icon-warning-sign:before {
+  content: "\e009";
+}
+
+/* line 92, ../sass/include/_icons.scss */
+.icon-w3c:before {
+  content: "\e00a";
+}
+
+/* line 93, ../sass/include/_icons.scss */
+.icon-volume-up:before {
+  content: "\e00b";
+}
+
+/* line 94, ../sass/include/_icons.scss */
+.icon-volume-off:before {
+  content: "\e00c";
+}
+
+/* line 95, ../sass/include/_icons.scss */
+.icon-volume-down:before {
+  content: "\e00d";
+}
+
+/* line 96, ../sass/include/_icons.scss */
+.icon-vimeo:before {
+  content: "\e00e";
+}
+
+/* line 97, ../sass/include/_icons.scss */
+.icon-view-mode:before {
+  content: "\e00f";
+}
+
+/* line 98, ../sass/include/_icons.scss */
+.icon-video-chat:before {
+  content: "\e010";
+}
+
+/* line 99, ../sass/include/_icons.scss */
+.icon-video-alt:before {
+  content: "\e011";
+}
+
+/* line 100, ../sass/include/_icons.scss */
+.icon-video:before {
+  content: "\e012";
+}
+
+/* line 101, ../sass/include/_icons.scss */
+.icon-user:before {
+  content: "\e013";
+}
+
+/* line 102, ../sass/include/_icons.scss */
+.icon-upload:before {
+  content: "\e014";
+}
+
+/* line 103, ../sass/include/_icons.scss */
+.icon-unlock-alt:before {
+  content: "\e015";
+}
+
+/* line 104, ../sass/include/_icons.scss */
+.icon-unlock:before {
+  content: "\e016";
+}
+
+/* line 105, ../sass/include/_icons.scss */
+.icon-universal-access:before {
+  content: "\e017";
+}
+
+/* line 106, ../sass/include/_icons.scss */
+.icon-twitter:before {
+  content: "\e018";
+}
+
+/* line 107, ../sass/include/_icons.scss */
+.icon-tumblr:before {
+  content: "\e019";
+}
+
+/* line 108, ../sass/include/_icons.scss */
+.icon-trash-alt:before {
+  content: "\e01a";
+}
+
+/* line 109, ../sass/include/_icons.scss */
+.icon-trash:before {
+  content: "\e01b";
+}
+
+/* line 110, ../sass/include/_icons.scss */
+.icon-torso:before {
+  content: "\e01c";
+}
+
+/* line 111, ../sass/include/_icons.scss */
+.icon-tint:before {
+  content: "\e01d";
+}
+
+/* line 112, ../sass/include/_icons.scss */
+.icon-time-alt:before {
+  content: "\e01e";
+}
+
+/* line 113, ../sass/include/_icons.scss */
+.icon-time:before {
+  content: "\e01f";
+}
+
+/* line 114, ../sass/include/_icons.scss */
+.icon-thumbs-up:before {
+  content: "\e020";
+}
+
+/* line 115, ../sass/include/_icons.scss */
+.icon-thumbs-down:before {
+  content: "\e021";
+}
+
+/* line 116, ../sass/include/_icons.scss */
+.icon-th-list:before {
+  content: "\e022";
+}
+
+/* line 117, ../sass/include/_icons.scss */
+.icon-th-large:before {
+  content: "\e023";
+}
+
+/* line 118, ../sass/include/_icons.scss */
+.icon-th:before {
+  content: "\e024";
+}
+
+/* line 119, ../sass/include/_icons.scss */
+.icon-text-width:before {
+  content: "\e025";
+}
+
+/* line 120, ../sass/include/_icons.scss */
+.icon-text-height:before {
+  content: "\e026";
+}
+
+/* line 121, ../sass/include/_icons.scss */
+.icon-tasks:before {
+  content: "\e027";
+}
+
+/* line 122, ../sass/include/_icons.scss */
+.icon-tags:before {
+  content: "\e028";
+}
+
+/* line 123, ../sass/include/_icons.scss */
+.icon-tag:before {
+  content: "\e029";
+}
+
+/* line 124, ../sass/include/_icons.scss */
+.icon-stumbleupon:before {
+  content: "\e02a";
+}
+
+/* line 125, ../sass/include/_icons.scss */
+.icon-stop-alt:before {
+  content: "\e02b";
+}
+
+/* line 126, ../sass/include/_icons.scss */
+.icon-stop:before {
+  content: "\e02c";
+}
+
+/* line 127, ../sass/include/_icons.scss */
+.icon-step-forward:before {
+  content: "\e02d";
+}
+
+/* line 128, ../sass/include/_icons.scss */
+.icon-step-backward:before {
+  content: "\e02e";
+}
+
+/* line 129, ../sass/include/_icons.scss */
+.icon-star-empty:before {
+  content: "\e02f";
+}
+
+/* line 130, ../sass/include/_icons.scss */
+.icon-star-alt:before {
+  content: "\e030";
+}
+
+/* line 131, ../sass/include/_icons.scss */
+.icon-star:before {
+  content: "\e031";
+}
+
+/* line 132, ../sass/include/_icons.scss */
+.icon-speaker:before {
+  content: "\e032";
+}
+
+/* line 133, ../sass/include/_icons.scss */
+.icon-smiley-alt:before {
+  content: "\e033";
+}
+
+/* line 134, ../sass/include/_icons.scss */
+.icon-smiley:before {
+  content: "\e034";
+}
+
+/* line 135, ../sass/include/_icons.scss */
+.icon-slideshare:before {
+  content: "\e035";
+}
+
+/* line 136, ../sass/include/_icons.scss */
+.icon-skype:before {
+  content: "\e036";
+}
+
+/* line 137, ../sass/include/_icons.scss */
+.icon-signal:before {
+  content: "\e037";
+}
+
+/* line 138, ../sass/include/_icons.scss */
+.icon-shopping-cart-sign:before {
+  content: "\e038";
+}
+
+/* line 139, ../sass/include/_icons.scss */
+.icon-shopping-cart:before {
+  content: "\e039";
+}
+
+/* line 140, ../sass/include/_icons.scss */
+.icon-share-alt:before {
+  content: "\e03a";
+}
+
+/* line 141, ../sass/include/_icons.scss */
+.icon-share:before {
+  content: "\e03b";
+}
+
+/* line 142, ../sass/include/_icons.scss */
+.icon-search-alt:before {
+  content: "\e03c";
+}
+
+/* line 143, ../sass/include/_icons.scss */
+.icon-search:before {
+  content: "\e03d";
+}
+
+/* line 144, ../sass/include/_icons.scss */
+.icon-screenshot:before {
+  content: "\e03e";
+}
+
+/* line 145, ../sass/include/_icons.scss */
+.icon-screen-alt:before {
+  content: "\e03f";
+}
+
+/* line 146, ../sass/include/_icons.scss */
+.icon-screen:before {
+  content: "\e040";
+}
+
+/* line 147, ../sass/include/_icons.scss */
+.icon-rss:before {
+  content: "\e041";
+}
+
+/* line 148, ../sass/include/_icons.scss */
+.icon-road:before {
+  content: "\e042";
+}
+
+/* line 149, ../sass/include/_icons.scss */
+.icon-reverse-alt:before {
+  content: "\e043";
+}
+
+/* line 150, ../sass/include/_icons.scss */
+.icon-retweet:before {
+  content: "\e044";
+}
+
+/* line 151, ../sass/include/_icons.scss */
+.icon-resize-vertical:before {
+  content: "\e045";
+}
+
+/* line 152, ../sass/include/_icons.scss */
+.icon-resize-small:before {
+  content: "\e046";
+}
+
+/* line 153, ../sass/include/_icons.scss */
+.icon-resize-horizontal:before {
+  content: "\e047";
+}
+
+/* line 154, ../sass/include/_icons.scss */
+.icon-resize-full:before {
+  content: "\e048";
+}
+
+/* line 155, ../sass/include/_icons.scss */
+.icon-repeat-alt:before {
+  content: "\e049";
+}
+
+/* line 156, ../sass/include/_icons.scss */
+.icon-repeat:before {
+  content: "\e04a";
+}
+
+/* line 157, ../sass/include/_icons.scss */
+.icon-remove-sign:before {
+  content: "\e04b";
+}
+
+/* line 158, ../sass/include/_icons.scss */
+.icon-remove-circle:before {
+  content: "\e04c";
+}
+
+/* line 159, ../sass/include/_icons.scss */
+.icon-remove:before {
+  content: "\e04d";
+}
+
+/* line 160, ../sass/include/_icons.scss */
+.icon-refresh:before {
+  content: "\e04e";
+}
+
+/* line 161, ../sass/include/_icons.scss */
+.icon-reddit:before {
+  content: "\e04f";
+}
+
+/* line 162, ../sass/include/_icons.scss */
+.icon-record:before {
+  content: "\e050";
+}
+
+/* line 163, ../sass/include/_icons.scss */
+.icon-random:before {
+  content: "\e051";
+}
+
+/* line 164, ../sass/include/_icons.scss */
+.icon-quotes-alt:before {
+  content: "\e052";
+}
+
+/* line 165, ../sass/include/_icons.scss */
+.icon-quotes:before {
+  content: "\e053";
+}
+
+/* line 166, ../sass/include/_icons.scss */
+.icon-question-sign:before {
+  content: "\e054";
+}
+
+/* line 167, ../sass/include/_icons.scss */
+.icon-question:before {
+  content: "\e055";
+}
+
+/* line 168, ../sass/include/_icons.scss */
+.icon-qrcode:before {
+  content: "\e056";
+}
+
+/* line 169, ../sass/include/_icons.scss */
+.icon-print:before {
+  content: "\e057";
+}
+
+/* line 170, ../sass/include/_icons.scss */
+.icon-plus-sign:before {
+  content: "\e058";
+}
+
+/* line 171, ../sass/include/_icons.scss */
+.icon-plus:before {
+  content: "\e059";
+}
+
+/* line 172, ../sass/include/_icons.scss */
+.icon-play-circle:before {
+  content: "\e05a";
+}
+
+/* line 173, ../sass/include/_icons.scss */
+.icon-play-alt:before {
+  content: "\e05b";
+}
+
+/* line 174, ../sass/include/_icons.scss */
+.icon-play:before {
+  content: "\e05c";
+}
+
+/* line 175, ../sass/include/_icons.scss */
+.icon-plane:before {
+  content: "\e05d";
+}
+
+/* line 176, ../sass/include/_icons.scss */
+.icon-pinterest:before {
+  content: "\e05e";
+}
+
+/* line 177, ../sass/include/_icons.scss */
+.icon-picture:before {
+  content: "\e05f";
+}
+
+/* line 178, ../sass/include/_icons.scss */
+.icon-picasa:before {
+  content: "\e060";
+}
+
+/* line 179, ../sass/include/_icons.scss */
+.icon-photo-alt:before {
+  content: "\e061";
+}
+
+/* line 180, ../sass/include/_icons.scss */
+.icon-photo:before {
+  content: "\e062";
+}
+
+/* line 181, ../sass/include/_icons.scss */
+.icon-phone-alt:before {
+  content: "\e063";
+}
+
+/* line 182, ../sass/include/_icons.scss */
+.icon-phone:before {
+  content: "\e064";
+}
+
+/* line 183, ../sass/include/_icons.scss */
+.icon-person:before {
+  content: "\e065";
+}
+
+/* line 184, ../sass/include/_icons.scss */
+.icon-pencil-alt:before {
+  content: "\e066";
+}
+
+/* line 185, ../sass/include/_icons.scss */
+.icon-pencil:before {
+  content: "\e067";
+}
+
+/* line 186, ../sass/include/_icons.scss */
+.icon-pause-alt:before {
+  content: "\e068";
+}
+
+/* line 187, ../sass/include/_icons.scss */
+.icon-pause:before {
+  content: "\e069";
+}
+
+/* line 188, ../sass/include/_icons.scss */
+.icon-path:before {
+  content: "\e06a";
+}
+
+/* line 189, ../sass/include/_icons.scss */
+.icon-paper-clip-alt:before {
+  content: "\e06b";
+}
+
+/* line 190, ../sass/include/_icons.scss */
+.icon-paper-clip:before {
+  content: "\e06c";
+}
+
+/* line 191, ../sass/include/_icons.scss */
+.icon-ok-sign:before {
+  content: "\e06d";
+}
+
+/* line 192, ../sass/include/_icons.scss */
+.icon-ok-circle:before {
+  content: "\e06e";
+}
+
+/* line 193, ../sass/include/_icons.scss */
+.icon-ok:before {
+  content: "\e06f";
+}
+
+/* line 194, ../sass/include/_icons.scss */
+.icon-off:before {
+  content: "\e070";
+}
+
+/* line 195, ../sass/include/_icons.scss */
+.icon-network:before {
+  content: "\e071";
+}
+
+/* line 196, ../sass/include/_icons.scss */
+.icon-music:before {
+  content: "\e072";
+}
+
+/* line 197, ../sass/include/_icons.scss */
+.icon-move:before {
+  content: "\e073";
+}
+
+/* line 198, ../sass/include/_icons.scss */
+.icon-minus-sign:before {
+  content: "\e074";
+}
+
+/* line 199, ../sass/include/_icons.scss */
+.icon-minus:before {
+  content: "\e075";
+}
+
+/* line 200, ../sass/include/_icons.scss */
+.icon-mic-alt:before {
+  content: "\e076";
+}
+
+/* line 201, ../sass/include/_icons.scss */
+.icon-mic:before {
+  content: "\e077";
+}
+
+/* line 202, ../sass/include/_icons.scss */
+.icon-map-marker-alt:before {
+  content: "\e078";
+}
+
+/* line 203, ../sass/include/_icons.scss */
+.icon-map-marker:before {
+  content: "\e079";
+}
+
+/* line 204, ../sass/include/_icons.scss */
+.icon-male:before {
+  content: "\e07a";
+}
+
+/* line 205, ../sass/include/_icons.scss */
+.icon-mail-alt:before {
+  content: "\e07b";
+}
+
+/* line 206, ../sass/include/_icons.scss */
+.icon-magnet:before {
+  content: "\e07c";
+}
+
+/* line 207, ../sass/include/_icons.scss */
+.icon-lock-alt:before {
+  content: "\e07d";
+}
+
+/* line 208, ../sass/include/_icons.scss */
+.icon-lock:before {
+  content: "\e07e";
+}
+
+/* line 209, ../sass/include/_icons.scss */
+.icon-list-alt:before {
+  content: "\e07f";
+}
+
+/* line 210, ../sass/include/_icons.scss */
+.icon-list:before {
+  content: "\e080";
+}
+
+/* line 211, ../sass/include/_icons.scss */
+.icon-linkedin:before {
+  content: "\e081";
+}
+
+/* line 212, ../sass/include/_icons.scss */
+.icon-leaf:before {
+  content: "\e082";
+}
+
+/* line 213, ../sass/include/_icons.scss */
+.icon-laptop-alt:before {
+  content: "\e083";
+}
+
+/* line 214, ../sass/include/_icons.scss */
+.icon-laptop:before {
+  content: "\e084";
+}
+
+/* line 215, ../sass/include/_icons.scss */
+.icon-key:before {
+  content: "\e085";
+}
+
+/* line 216, ../sass/include/_icons.scss */
+.icon-italic:before {
+  content: "\e086";
+}
+
+/* line 217, ../sass/include/_icons.scss */
+.icon-iphone-home:before {
+  content: "\e087";
+}
+
+/* line 218, ../sass/include/_icons.scss */
+.icon-instagram:before {
+  content: "\e088";
+}
+
+/* line 219, ../sass/include/_icons.scss */
+.icon-info-sign:before {
+  content: "\e089";
+}
+
+/* line 220, ../sass/include/_icons.scss */
+.icon-indent-right:before {
+  content: "\e08a";
+}
+
+/* line 221, ../sass/include/_icons.scss */
+.icon-indent-left:before {
+  content: "\e08b";
+}
+
+/* line 222, ../sass/include/_icons.scss */
+.icon-inbox-box:before {
+  content: "\e08c";
+}
+
+/* line 223, ../sass/include/_icons.scss */
+.icon-inbox-alt:before {
+  content: "\e08d";
+}
+
+/* line 224, ../sass/include/_icons.scss */
+.icon-inbox:before {
+  content: "\e08e";
+}
+
+/* line 225, ../sass/include/_icons.scss */
+.icon-idea-alt:before {
+  content: "\e08f";
+}
+
+/* line 226, ../sass/include/_icons.scss */
+.icon-idea:before {
+  content: "\e090";
+}
+
+/* line 227, ../sass/include/_icons.scss */
+.icon-home-alt:before {
+  content: "\e091";
+}
+
+/* line 228, ../sass/include/_icons.scss */
+.icon-home:before {
+  content: "\e092";
+}
+
+/* line 229, ../sass/include/_icons.scss */
+.icon-heart-empty:before {
+  content: "\e093";
+}
+
+/* line 230, ../sass/include/_icons.scss */
+.icon-heart-alt:before {
+  content: "\e094";
+}
+
+/* line 231, ../sass/include/_icons.scss */
+.icon-heart:before {
+  content: "\e095";
+}
+
+/* line 232, ../sass/include/_icons.scss */
+.icon-hearing-impaired:before {
+  content: "\e096";
+}
+
+/* line 233, ../sass/include/_icons.scss */
+.icon-headphones:before {
+  content: "\e097";
+}
+
+/* line 234, ../sass/include/_icons.scss */
+.icon-hdd:before {
+  content: "\e098";
+}
+
+/* line 235, ../sass/include/_icons.scss */
+.icon-hand-up:before {
+  content: "\e099";
+}
+
+/* line 236, ../sass/include/_icons.scss */
+.icon-hand-right:before {
+  content: "\e09a";
+}
+
+/* line 237, ../sass/include/_icons.scss */
+.icon-hand-left:before {
+  content: "\e09b";
+}
+
+/* line 238, ../sass/include/_icons.scss */
+.icon-hand-down:before {
+  content: "\e09c";
+}
+
+/* line 239, ../sass/include/_icons.scss */
+.icon-guidedog:before {
+  content: "\e09d";
+}
+
+/* line 240, ../sass/include/_icons.scss */
+.icon-group-alt:before {
+  content: "\e09e";
+}
+
+/* line 241, ../sass/include/_icons.scss */
+.icon-group:before {
+  content: "\e09f";
+}
+
+/* line 242, ../sass/include/_icons.scss */
+.icon-graph-alt:before {
+  content: "\e0a0";
+}
+
+/* line 243, ../sass/include/_icons.scss */
+.icon-graph:before {
+  content: "\e0a1";
+}
+
+/* line 244, ../sass/include/_icons.scss */
+.icon-googleplus:before {
+  content: "\e0a2";
+}
+
+/* line 245, ../sass/include/_icons.scss */
+.icon-globe-alt:before {
+  content: "\e0a3";
+}
+
+/* line 246, ../sass/include/_icons.scss */
+.icon-globe:before {
+  content: "\e0a4";
+}
+
+/* line 247, ../sass/include/_icons.scss */
+.icon-glasses:before {
+  content: "\e0a5";
+}
+
+/* line 248, ../sass/include/_icons.scss */
+.icon-glass:before {
+  content: "\e0a6";
+}
+
+/* line 249, ../sass/include/_icons.scss */
+.icon-github-text:before {
+  content: "\e0a7";
+}
+
+/* line 250, ../sass/include/_icons.scss */
+.icon-github:before {
+  content: "\e0a8";
+}
+
+/* line 251, ../sass/include/_icons.scss */
+.icon-gift:before {
+  content: "\e0a9";
+}
+
+/* line 252, ../sass/include/_icons.scss */
+.icon-fullscreen:before {
+  content: "\e0aa";
+}
+
+/* line 253, ../sass/include/_icons.scss */
+.icon-friendfeed-rect:before {
+  content: "\e0ab";
+}
+
+/* line 254, ../sass/include/_icons.scss */
+.icon-friendfeed:before {
+  content: "\e0ac";
+}
+
+/* line 255, ../sass/include/_icons.scss */
+.icon-foursquare:before {
+  content: "\e0ad";
+}
+
+/* line 256, ../sass/include/_icons.scss */
+.icon-forward-alt:before {
+  content: "\e0ae";
+}
+
+/* line 257, ../sass/include/_icons.scss */
+.icon-forward:before {
+  content: "\e0af";
+}
+
+/* line 258, ../sass/include/_icons.scss */
+.icon-fontsize:before {
+  content: "\e0b0";
+}
+
+/* line 259, ../sass/include/_icons.scss */
+.icon-font:before {
+  content: "\e0b1";
+}
+
+/* line 260, ../sass/include/_icons.scss */
+.icon-folder-sign:before {
+  content: "\e0b2";
+}
+
+/* line 261, ../sass/include/_icons.scss */
+.icon-folder-open:before {
+  content: "\e0b3";
+}
+
+/* line 262, ../sass/include/_icons.scss */
+.icon-folder-close:before {
+  content: "\e0b4";
+}
+
+/* line 263, ../sass/include/_icons.scss */
+.icon-folder:before {
+  content: "\e0b5";
+}
+
+/* line 264, ../sass/include/_icons.scss */
+.icon-flickr:before {
+  content: "\e0b6";
+}
+
+/* line 265, ../sass/include/_icons.scss */
+.icon-flag-alt:before {
+  content: "\e0b7";
+}
+
+/* line 266, ../sass/include/_icons.scss */
+.icon-flag:before {
+  content: "\e0b8";
+}
+
+/* line 267, ../sass/include/_icons.scss */
+.icon-fire:before {
+  content: "\e0b9";
+}
+
+/* line 268, ../sass/include/_icons.scss */
+.icon-filter:before {
+  content: "\e0ba";
+}
+
+/* line 269, ../sass/include/_icons.scss */
+.icon-film:before {
+  content: "\e0bb";
+}
+
+/* line 270, ../sass/include/_icons.scss */
+.icon-file-new-alt:before {
+  content: "\e0bc";
+}
+
+/* line 271, ../sass/include/_icons.scss */
+.icon-file-new:before {
+  content: "\e0bd";
+}
+
+/* line 272, ../sass/include/_icons.scss */
+.icon-file-edit-alt:before {
+  content: "\e0be";
+}
+
+/* line 273, ../sass/include/_icons.scss */
+.icon-file-edit:before {
+  content: "\e0bf";
+}
+
+/* line 274, ../sass/include/_icons.scss */
+.icon-file-alt:before {
+  content: "\e0c0";
+}
+
+/* line 275, ../sass/include/_icons.scss */
+.icon-file:before {
+  content: "\e0c1";
+}
+
+/* line 276, ../sass/include/_icons.scss */
+.icon-female:before {
+  content: "\e0c2";
+}
+
+/* line 277, ../sass/include/_icons.scss */
+.icon-fast-forward:before {
+  content: "\e0c3";
+}
+
+/* line 278, ../sass/include/_icons.scss */
+.icon-fast-backward:before {
+  content: "\e0c4";
+}
+
+/* line 279, ../sass/include/_icons.scss */
+.icon-facetime-video:before {
+  content: "\e0c5";
+}
+
+/* line 280, ../sass/include/_icons.scss */
+.icon-facebook:before {
+  content: "\e0c6";
+}
+
+/* line 281, ../sass/include/_icons.scss */
+.icon-eye-open:before {
+  content: "\e0c7";
+}
+
+/* line 282, ../sass/include/_icons.scss */
+.icon-eye-close:before {
+  content: "\e0c8";
+}
+
+/* line 283, ../sass/include/_icons.scss */
+.icon-exclamation-sign:before {
+  content: "\e0c9";
+}
+
+/* line 284, ../sass/include/_icons.scss */
+.icon-error-alt:before {
+  content: "\e0ca";
+}
+
+/* line 285, ../sass/include/_icons.scss */
+.icon-error:before {
+  content: "\e0cb";
+}
+
+/* line 286, ../sass/include/_icons.scss */
+.icon-envelope:before {
+  content: "\e0cc";
+}
+
+/* line 287, ../sass/include/_icons.scss */
+.icon-eject:before {
+  content: "\e0cd";
+}
+
+/* line 288, ../sass/include/_icons.scss */
+.icon-edit:before {
+  content: "\e0ce";
+}
+
+/* line 289, ../sass/include/_icons.scss */
+.icon-dribble:before {
+  content: "\e0cf";
+}
+
+/* line 290, ../sass/include/_icons.scss */
+.icon-download-alt:before {
+  content: "\e0d0";
+}
+
+/* line 291, ../sass/include/_icons.scss */
+.icon-download:before {
+  content: "\e0d1";
+}
+
+/* line 292, ../sass/include/_icons.scss */
+.icon-digg:before {
+  content: "\e0d2";
+}
+
+/* line 293, ../sass/include/_icons.scss */
+.icon-deviantart:before {
+  content: "\e0d3";
+}
+
+/* line 294, ../sass/include/_icons.scss */
+.icon-delicious:before {
+  content: "\e0d4";
+}
+
+/* line 295, ../sass/include/_icons.scss */
+.icon-dashboard:before {
+  content: "\e0d5";
+}
+
+/* line 296, ../sass/include/_icons.scss */
+.icon-css:before {
+  content: "\e0d6";
+}
+
+/* line 297, ../sass/include/_icons.scss */
+.icon-credit-card:before {
+  content: "\e0d7";
+}
+
+/* line 298, ../sass/include/_icons.scss */
+.icon-compass-alt:before {
+  content: "\e0d8";
+}
+
+/* line 299, ../sass/include/_icons.scss */
+.icon-compass:before {
+  content: "\e0d9";
+}
+
+/* line 300, ../sass/include/_icons.scss */
+.icon-comment-alt:before {
+  content: "\e0da";
+}
+
+/* line 301, ../sass/include/_icons.scss */
+.icon-comment:before {
+  content: "\e0db";
+}
+
+/* line 302, ../sass/include/_icons.scss */
+.icon-cogs:before {
+  content: "\e0dc";
+}
+
+/* line 303, ../sass/include/_icons.scss */
+.icon-cog-alt:before {
+  content: "\e0dd";
+}
+
+/* line 304, ../sass/include/_icons.scss */
+.icon-cog:before {
+  content: "\e0de";
+}
+
+/* line 305, ../sass/include/_icons.scss */
+.icon-cloud-alt:before {
+  content: "\e0df";
+}
+
+/* line 306, ../sass/include/_icons.scss */
+.icon-cloud:before {
+  content: "\e0e0";
+}
+
+/* line 307, ../sass/include/_icons.scss */
+.icon-circle-arrow-up:before {
+  content: "\e0e1";
+}
+
+/* line 308, ../sass/include/_icons.scss */
+.icon-circle-arrow-right:before {
+  content: "\e0e2";
+}
+
+/* line 309, ../sass/include/_icons.scss */
+.icon-circle-arrow-left:before {
+  content: "\e0e3";
+}
+
+/* line 310, ../sass/include/_icons.scss */
+.icon-circle-arrow-down:before {
+  content: "\e0e4";
+}
+
+/* line 311, ../sass/include/_icons.scss */
+.icon-child:before {
+  content: "\e0e5";
+}
+
+/* line 312, ../sass/include/_icons.scss */
+.icon-chevron-up:before {
+  content: "\e0e6";
+}
+
+/* line 313, ../sass/include/_icons.scss */
+.icon-chevron-right:before {
+  content: "\e0e7";
+}
+
+/* line 314, ../sass/include/_icons.scss */
+.icon-chevron-left:before {
+  content: "\e0e8";
+}
+
+/* line 315, ../sass/include/_icons.scss */
+.icon-chevron-down:before {
+  content: "\e0e9";
+}
+
+/* line 316, ../sass/include/_icons.scss */
+.icon-check:before {
+  content: "\e0ea";
+}
+
+/* line 317, ../sass/include/_icons.scss */
+.icon-certificate:before {
+  content: "\e0eb";
+}
+
+/* line 318, ../sass/include/_icons.scss */
+.icon-cc:before {
+  content: "\e0ec";
+}
+
+/* line 319, ../sass/include/_icons.scss */
+.icon-camera:before {
+  content: "\e0ed";
+}
+
+/* line 320, ../sass/include/_icons.scss */
+.icon-calendar-sign:before {
+  content: "\e0ee";
+}
+
+/* line 321, ../sass/include/_icons.scss */
+.icon-calendar:before {
+  content: "\e0ef";
+}
+
+/* line 322, ../sass/include/_icons.scss */
+.icon-bullhorn:before {
+  content: "\e0f0";
+}
+
+/* line 323, ../sass/include/_icons.scss */
+.icon-briefcase:before {
+  content: "\e0f1";
+}
+
+/* line 324, ../sass/include/_icons.scss */
+.icon-braille:before {
+  content: "\e0f2";
+}
+
+/* line 325, ../sass/include/_icons.scss */
+.icon-bookmark-empty:before {
+  content: "\e0f3";
+}
+
+/* line 326, ../sass/include/_icons.scss */
+.icon-bookmark:before {
+  content: "\e0f4";
+}
+
+/* line 327, ../sass/include/_icons.scss */
+.icon-book:before {
+  content: "\e0f5";
+}
+
+/* line 328, ../sass/include/_icons.scss */
+.icon-bold:before {
+  content: "\e0f6";
+}
+
+/* line 329, ../sass/include/_icons.scss */
+.icon-blogger:before {
+  content: "\e0f7";
+}
+
+/* line 330, ../sass/include/_icons.scss */
+.icon-blind:before {
+  content: "\e0f8";
+}
+
+/* line 331, ../sass/include/_icons.scss */
+.icon-bell:before {
+  content: "\e0f9";
+}
+
+/* line 332, ../sass/include/_icons.scss */
+.icon-behance:before {
+  content: "\e0fa";
+}
+
+/* line 333, ../sass/include/_icons.scss */
+.icon-barcode:before {
+  content: "\e0fb";
+}
+
+/* line 334, ../sass/include/_icons.scss */
+.icon-ban-circle:before {
+  content: "\e0fc";
+}
+
+/* line 335, ../sass/include/_icons.scss */
+.icon-backward:before {
+  content: "\e0fd";
+}
+
+/* line 336, ../sass/include/_icons.scss */
+.icon-asterisk:before {
+  content: "\e0fe";
+}
+
+/* line 337, ../sass/include/_icons.scss */
+.icon-asl:before {
+  content: "\e0ff";
+}
+
+/* line 338, ../sass/include/_icons.scss */
+.icon-arrow-up:before {
+  content: "\e100";
+}
+
+/* line 339, ../sass/include/_icons.scss */
+.icon-arrow-right:before {
+  content: "\e101";
+}
+
+/* line 340, ../sass/include/_icons.scss */
+.icon-arrow-left:before {
+  content: "\e102";
+}
+
+/* line 341, ../sass/include/_icons.scss */
+.icon-arrow-down:before {
+  content: "\e103";
+}
+
+/* line 342, ../sass/include/_icons.scss */
+.icon-align-right:before {
+  content: "\e104";
+}
+
+/* line 343, ../sass/include/_icons.scss */
+.icon-align-left:before {
+  content: "\e105";
+}
+
+/* line 344, ../sass/include/_icons.scss */
+.icon-align-justify:before {
+  content: "\e106";
+}
+
+/* line 345, ../sass/include/_icons.scss */
+.icon-align-center:before {
+  content: "\e107";
+}
+
+/* line 346, ../sass/include/_icons.scss */
+.icon-adult:before {
+  content: "\e108";
+}
+
+/* line 347, ../sass/include/_icons.scss */
+.icon-adjust:before {
+  content: "\e109";
+}
+
+/* line 348, ../sass/include/_icons.scss */
+.icon-address-book-alt:before {
+  content: "\e10a";
+}
+
+/* line 349, ../sass/include/_icons.scss */
+.icon-address-book:before {
+  content: "\e10b";
+}
+
+/* line 350, ../sass/include/_icons.scss */
+.icon-check-empty:before {
+  content: "\e10d";
+}
+
+/* line 351, ../sass/include/_icons.scss */
+.icon-stackoverflow:before {
+  content: "\e10c";
+}
+
+/* line 1, ../sass/include/_nav.scss */
+.otherLinks {
+  position: absolute;
+  width: 220px;
+  height: 300px;
+  left: 50%;
+  top: 50%;
+  margin: 100px 0 0 -110px;
+  z-index: 1;
+  text-align: center;
+}
+/* line 10, ../sass/include/_nav.scss */
+.otherLinks h2 {
+  font-size: 16px;
+  background: black;
+  display: inline-block;
+  padding: 5px;
+  display: none;
+}
+/* line 17, ../sass/include/_nav.scss */
+.otherLinks ul {
+  padding: 0;
+  margin: 0 20%;
+  list-style: none;
+  position: relative;
+  width: 60%;
+}
+/* line 23, ../sass/include/_nav.scss */
+.otherLinks ul li {
+  position: absolute;
+  text-align: center;
+  line-height: 40px;
+  margin: -20px 0 0 -20px;
+  width: 40px;
+  height: 40px;
+}
+/* line 29, ../sass/include/_nav.scss */
+.otherLinks ul li:before {
+  left: 0;
+  top: 0;
+  content: "";
+  background: black;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* line 39, ../sass/include/_nav.scss */
+.otherLinks ul li a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+/* line 47, ../sass/include/_nav.scss */
+.otherLinks ul li:nth-child(1) {
+  top: 12px;
+  left: 0%;
+}
+/* line 51, ../sass/include/_nav.scss */
+.otherLinks ul li:nth-child(2) {
+  top: 44px;
+  left: 25%;
+}
+/* line 55, ../sass/include/_nav.scss */
+.otherLinks ul li:nth-child(3) {
+  top: 76px;
+  left: 50%;
+}
+/* line 59, ../sass/include/_nav.scss */
+.otherLinks ul li:nth-child(4) {
+  top: 44px;
+  left: 75%;
+}
+/* line 63, ../sass/include/_nav.scss */
+.otherLinks ul li:nth-child(5) {
+  top: 12px;
+  left: 100%;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Image replacement
+ */
+/* line 9, ../sass/include/_utilities.scss */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px;
+}
+
+/* line 17, ../sass/include/_utilities.scss */
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+/* line 28, ../sass/include/_utilities.scss */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+/* line 37, ../sass/include/_utilities.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+/* line 54, ../sass/include/_utilities.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+/* line 67, ../sass/include/_utilities.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+/* line 84, ../sass/include/_utilities.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+/* line 89, ../sass/include/_utilities.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+/* line 98, ../sass/include/_utilities.scss */
+.clearfix {
+  *zoom: 1;
+}
+
+/* line 101, ../sass/include/_utilities.scss */
+.fr {
+  float: right;
+}
+
+/* line 104, ../sass/include/_utilities.scss */
+.fl {
+  float: left;
+}
