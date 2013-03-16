@@ -1,0 +1,6 @@
+# Sass shit
+.sass-cache
+
+# Staging folders
+temp
+dist

@@ -29,7 +29,7 @@ body {
 	overflow:hidden;
 	height:100%;
 	width:100%;
-	@include background-image(radial-gradient(100% 100%, #fff 30%, #AAA 100%)); 
+	@include background-image(radial-gradient(#fff 50%, #AAA 130%)); 
 }
 h1,h2,h3,h4 {
 	font-family: $customThin;

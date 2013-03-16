@@ -2,8 +2,18 @@
   "author": "Gianluca Guarini",
   "name": "gianlucaguarini.com",
   "version": "0.0.1",
-  "dependencies": {
-
+  "dependencies": {},
+  "devDependencies": {},
+  "readmeFilename": "README.md",
+  "gitHead": "1eccbffc9732c5054fa090fea338097e60277a21",
+  "description": "gianlucaguarini.com ===================",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "devDependencies": {}
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/GianlucaGuarini/gianlucaguarini.com.git"
+  },
+  "license": "Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License"
 }
