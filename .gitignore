@@ -1,6 +1,10 @@
+.DS_Store
+
 # Sass shit
 .sass-cache
 
 # Staging folders
-temp
+app/assets/vendor/bower
+.temp
+node_modules
 dist

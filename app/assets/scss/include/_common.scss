@@ -1,0 +1,232 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+	 Base styles: opinionated defaults
+	 ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+		color: #222;
+}
+
+html {
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+body {
+	font-size: 1em;
+	font-family: $customRegular;
+	overflow:hidden;
+	height:100%;
+	width:100%;
+	@include background-image(radial-gradient(#fff 50%, #AAA 130%));
+}
+h1,h2,h3,h4 {
+	font-family: $customThin;
+	font-weight: normal;
+}
+b,strong {
+	font-weight: 700;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+		background: black;
+		text-shadow: none;
+}
+
+::selection {
+		background: black;
+		text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+		display: block;
+		height: 1px;
+		border: 0;
+		border-top: 1px solid #ccc;
+		margin: 1em 0;
+		padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+		vertical-align: middle;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-o-user-select: none;
+		user-select: none;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+		border: 0;
+		margin: 0;
+		padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+		resize: vertical;
+}
+
+/* ==========================================================================
+	 Chrome Frame prompt
+	 ========================================================================== */
+
+.chromeframe {
+		margin: 0.2em 0;
+		background: #ccc;
+		color: #000;
+		padding: 0.2em 0;
+}
+
+#Viewport {
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+}
+.cyan {
+	color:$cyan;
+	.content .bg:before {
+		background:$cyan;
+	}
+	a:hover,.plus:hover {
+		color:$cyan;
+	}
+}
+.magenta {
+	color:$magenta;
+	.content .bg:before {
+		background:$magenta;
+	}
+	a:hover,.plus:hover {
+		color:$magenta;
+	}
+}
+.orange {
+	color:$orange;
+	.content .bg:before {
+		background:$orange;
+	}
+	a:hover,.plus:hover {
+		color:$orange;
+	}
+}
+.green {
+	color:$green;
+	.content .bg:before {
+		background:$green;
+	}
+	a:hover,.plus:hover {
+		color:$green;
+	}
+}
+.content {
+	position:absolute;
+	top:50%;
+	left:50%;
+	z-index:1;
+	margin:-100px 0 0 -100px;
+	text-align:center;
+	color:white;
+	z-index:2;
+	.plus {
+			position:relative;
+			font-family: $customThin;
+			font-size:50px;
+			line-height:50px;
+			display:block;
+			cursor:pointer;
+			width:30px;
+			height:40px;
+			margin:0 auto;
+			font-style: normal;
+			z-index:1;
+	}
+	@include square(200px);
+	h1 {
+		font-size:27px;
+		line-height:188px;
+		margin:0;
+		width:200px;
+		position:absolute;
+		&:before {
+			content:"";
+			position:absolute;
+			display:block;
+			left:56%;
+			top:5%;
+			@include size(180px,1px);
+			@include rotate(-13deg);
+			background:$grayDarker;
+		}
+	}
+	h2 {
+		position:relative;
+		margin:108px 0 60px;
+		font-family: $customRegular;
+		font-size: 12px;
+		z-index:1;
+	}
+
+	.bg {
+
+		@include square(200px);
+		position:absolute;
+
+		overflow:hidden;
+		@include rotate(45deg);
+		&:after {
+			content:"";
+			display:block;
+			position:absolute;
+			background:black;
+			margin:1px;
+			@include square(198px);
+		}
+		&:before {
+			content:"";
+			display:block;
+			position:absolute;
+			left:50%;
+			top:-400px;
+			@include rotate(45deg);
+			@include animation(18s ease-in 1s infinite rotator);
+			@include size(500px,100px);
+		}
+	}
+}
+
+
