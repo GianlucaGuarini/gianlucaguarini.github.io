@@ -5,8 +5,6 @@ module.exports = main:
       cwd: "app/assets"
       src: [
         "css/**"
-        "vendor/**"
-        "!vendor/bower"
       ]
       dest: "dist/assets"
     }
