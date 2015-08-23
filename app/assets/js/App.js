@@ -28,6 +28,7 @@ define([
 			//this.debug();
 
 			this.bindEvents();
+			this.setViewport();
 		},
 		animate: function () {
 			this.viewport.camera.position.x += (this.mouse.x - this.viewport.camera.position.x) * 0.03;

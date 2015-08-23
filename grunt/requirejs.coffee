@@ -16,5 +16,6 @@ module.exports = build:
     onModuleBundleComplete: (data) ->
       outputFile = data.path
       fs.writeFileSync outputFile, amdclean.clean(
-          code: fs.readFileSync(outputFile)
+          filePath: outputFile
+          transformAMDChecks: false
       )

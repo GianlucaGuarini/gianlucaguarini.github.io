@@ -123,6 +123,8 @@ define([
 			this.scene.add(this.line);
 
 
+
+
 		};
 
 		this.update = function () {
@@ -130,7 +132,6 @@ define([
 			this.renderer.render(this.scene, this.camera);
 		};
 
-		this.setSize(this.width, this.height);
 		this.$el.html(this.renderer.domElement);
 		return this;
 	};
