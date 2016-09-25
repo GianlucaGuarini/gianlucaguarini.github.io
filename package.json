@@ -1,7 +1,8 @@
 {
   "main": "Gruntfile.js",
   "scripts": {
-    "test": "grunt"
+    "test": "grunt",
+    "deploy": "git subtree push --prefix dist origin gh-pages"
   },
   "name": "gianlucaguarini.com",
   "description": "www.gianlucaguarini.com",

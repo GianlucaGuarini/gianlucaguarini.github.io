@@ -21,5 +21,3 @@ module.exports = (grunt) ->
     "requirejs"
     "processhtml"
   ]
-
-  return

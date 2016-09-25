@@ -7,4 +7,3 @@
 app/assets/vendor/bower
 .temp
 node_modules
-dist
