@@ -2,7 +2,7 @@ module.exports = main:
   files: [
     {
       expand: true
-      cwd: "app/assets"
+      cwd: "src/assets"
       src: [
         "css/**"
       ]
@@ -10,7 +10,7 @@ module.exports = main:
     }
     {
       expand: true
-      cwd: "app"
+      cwd: "src"
       src: ["*.!(json|rb|md|js)"]
       dest: "./"
       filter: "isFile"
