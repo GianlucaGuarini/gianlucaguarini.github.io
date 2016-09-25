@@ -1,8 +1,7 @@
 {
   "main": "Gruntfile.js",
   "scripts": {
-    "test": "grunt",
-    "deploy": "git subtree push --prefix dist origin gh-pages"
+    "test": "echo 'Blindly walking on the edge of the universe'"
   },
   "name": "gianlucaguarini.com",
   "description": "www.gianlucaguarini.com",
@@ -11,14 +10,12 @@
     "amdclean": "^2.7.0",
     "grunt": "^0.4.5",
     "grunt-bower": "^0.20.0",
-    "grunt-contrib-clean": "^0.6.0",
     "grunt-contrib-compass": "^1.0.3",
     "grunt-contrib-copy": "^0.8.1",
     "grunt-contrib-jshint": "^0.11.2",
     "grunt-contrib-requirejs": "^0.4.4",
     "grunt-contrib-uglify": "^0.9.1",
     "grunt-contrib-watch": "^0.6.1",
-    "grunt-favicons": "^0.7.0",
     "grunt-processhtml": "^0.3.8",
     "load-grunt-configs": "^0.4.3",
     "load-grunt-tasks": "^3.2.0"

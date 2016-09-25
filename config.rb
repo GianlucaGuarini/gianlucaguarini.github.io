@@ -1,5 +1,5 @@
 http_path = "/"
-css_dir = "app/assets/css"
-sass_dir = "app/assets/scss"
+css_dir = "src/assets/css"
+sass_dir = "src/assets/scss"
 
 output_style = :compressed

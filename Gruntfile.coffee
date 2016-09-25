@@ -15,7 +15,6 @@ module.exports = (grunt) ->
   # Default task
   grunt.registerTask "default", [
     "jshint"
-    "clean"
     "compass"
     "copy"
     "requirejs"

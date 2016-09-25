@@ -6,13 +6,13 @@ module.exports = main:
       src: [
         "css/**"
       ]
-      dest: "dist/assets"
+      dest: "./assets"
     }
     {
       expand: true
       cwd: "app"
       src: ["*.!(json|rb|md|js)"]
-      dest: "dist"
+      dest: "./"
       filter: "isFile"
     }
   ]

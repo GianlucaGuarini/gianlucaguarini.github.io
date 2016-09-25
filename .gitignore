@@ -4,6 +4,6 @@
 .sass-cache
 
 # Staging folders
-app/assets/vendor/bower
+src/assets/vendor/bower
 .temp
 node_modules

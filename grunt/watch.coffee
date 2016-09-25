@@ -1,8 +1,8 @@
 module.exports =
   js:
-    files: ["app/assets/js/**/*.js"]
+    files: ["src/assets/js/**/*.js"]
     tasks: ["jshint"]
 
   css:
-    files: ["app/assets/scss/**/*.scss"]
+    files: ["src/assets/scss/**/*.scss"]
     tasks: ["compass"]

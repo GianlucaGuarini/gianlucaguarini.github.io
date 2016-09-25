@@ -1,3 +1,3 @@
 module.exports = all: [
-  "app/assets/js/**/*.js"
+  "src/assets/js/**/*.js"
 ]

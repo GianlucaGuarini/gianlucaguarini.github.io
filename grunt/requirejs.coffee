@@ -3,9 +3,9 @@ fs = require 'fs'
 
 module.exports = build:
   options:
-    baseUrl: 'app/assets/js'
-    out: 'dist/assets/js/build.min.js'
-    mainConfigFile: 'app/assets/js/config.js'
+    baseUrl: 'src/assets/js'
+    out: './assets/js/build.min.js'
+    mainConfigFile: 'src/assets/js/config.js'
     name: 'main'
     optimize: 'uglify2'
     insertRequire: ['main']

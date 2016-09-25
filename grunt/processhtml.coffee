@@ -1,3 +1,3 @@
 module.exports = build:
   files:
-    "dist/index.html": ["app/index.html"]
+    "index.html": ["src/index.html"]
