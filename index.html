@@ -1,53 +1,156 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Gianluca Guarini's website</title>
-        <meta name="description" content="">
-        <link rel="icon" href="favicon.png" type="image/png" />
-        <meta name="viewport" content="width=device-width">
-        <link type="text/plain" rel="author" href="humans.txt" />
-        <link rel="stylesheet" href="assets/css/style.css">
-        <!--
-        /**
-         * I might hide really interesting things for you here... but unfortunately I did not :)
-         * So here you will just find the source code of this site:
-         * https://github.com/GianlucaGuarini/gianlucaguarini.com
-         */
-        -->
-    </head>
-    <body>
+<html lang="en">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+    <title>Gianluca Guarini's website</title>
+    <meta name='viewport' content='width=device-width'>
+    <!--
+    /**
+    * I might hide really interesting things for you here... but unfortunately I did not :)
+    * So here you will just find the source code of this site:
+    * https://github.com/GianlucaGuarini/gianlucaguarini.github.io
+    */
+    -->
+    <style>
+      html {
+        --bg-color: #fdfdff;
+        --text-color: #46515c;
+        --hover-color: #8199aa;
+      }
 
-    <div class="content">
-      <div class="bg"></div>
+      body {
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+
+        margin: 0;
+        min-height: 100vh;
+
+        background: var(--bg-color);
+        color: var(--text-color);
+      }
+
+      main {
+        margin: 0 2rem;
+        text-align: right;
+      }
+
+      p {
+        line-height: 1.4;
+        margin: 0 0 0.2rem;
+      }
+
+      p:first-of-type {
+        margin-top: 0.6rem;
+      }
+
+      p:last-of-type {
+        margin-bottom: 2rem;
+      }
+
+      a {
+        color: var(--text-color);
+      }
+
+      a:hover, a:active, a:focus {
+        color: var(--hover-color);
+      }
+
+      h1, h2 {
+        display: inline;
+        padding: 0 0.5rem;
+
+        background: var(--text-color);
+        color: var(--bg-color);
+      }
+
+      h1 {
+        margin: 2rem 0 0;
+      }
+
+      h2 {
+        margin: 0;
+      }
+
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        margin: 0 0 2rem;
+
+        list-style: none;
+      }
+
+      ul li {
+        margin: 0.6rem 0 0 0.6rem;
+      }
+
+      figure {
+        margin: 2rem 0;
+      }
+
+      figure img {
+        height: 14rem;
+        width: 14rem;
+        border-radius: 100%;
+
+        overflow: hidden;
+
+        box-shadow: 0 0 2rem rgba(0, 0, 0, 1) inset;
+      }
+
+      @media screen and (max-width: 22rem) {
+        html {
+          font-size: 84%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <figure>
+        <img src='./me.jpg' title='Me'/>
+      </figure>
       <h1>Gianluca Guarini</h1>
-      <h2>Creative web developer<br/> I ♥ coding cool stuff</h2>
-    </div>
-    <aside class="otherLinks">
+      <p>
+        I do programming for living.
+      </p>
+      <p>
+        I love pursuing <strong>beauty</strong> and <strong>elegance</strong> in everything I do.
+      </p>
+      <p>
+        I code mainly in <strong>javascript</strong>, <strong>golang</strong> and <strong>haskell</strong>
+      </p>
       <h2>Find me on</h2>
       <ul>
-        <li><a title="I like open source ;) [Github]" target="_blank" href="https://github.com/GianlucaGuarini"><i class="icon-github"></i></a></li>
-        <li><a title="Interested in my professional life? [Linkedin]" target="_blank" href="http://www.linkedin.com/in/gianlucaguarini"><i class="icon-linkedin"></i></a></li>
-        <li><a title="Any question? Ping me on twitter [Twitter]" target="_blank" href="https://twitter.com/#!/gianlucaguarini"><i class="icon-twitter"></i></a></li>
-        <li><a title="Some of my experiments [Codepen.io]" target="_blank" href="http://codepen.io/GianlucaGuarini/"><i class="icon-tint"></i></a></li>
-        <!-- <li><a title="If you love copy and paste that's the right place for you [My blog]" target="_blank" href=""><i class="icon-plus"></i></a></li> -->
+        <li>
+          <a target='_blank' href='https://twitter.com/#!/gianlucaguarini'>
+            Twitter
+          </a>
+        </li>
+        <li>
+          <a target='_blank' href='https://github.com/GianlucaGuarini'>
+            Github
+          </a>
+        </li>
+        <li>
+          <a target='_blank' href='https://medium.com/@gianluca.guarini'>
+            Medium
+          </a>
+        </li>
+        <li>
+          <a target='_blank' href='http://codepen.io/GianlucaGuarini/'>
+            Codepen
+          </a>
+        </li>
+        <li>
+          <a target='_blank' href='http://www.linkedin.com/in/gianlucaguarini'>
+            Linkedin
+          </a>
+        </li>
       </ul>
-    </aside>
-    <figure id="Viewport"></figure>
-
-    <script src="assets/js/build.min.js"></script>
-
-    <script type="text/javascript">
-     var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-8059670-3']);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-    </script>
-</body>
+    </main>
+  </body>
 </html>
