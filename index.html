@@ -17,6 +17,7 @@
         --bg-color: #fdfdff;
         --text-color: #46515c;
         --hover-color: #8199aa;
+        --lead-font-weight: 300;
       }
 
       body {
@@ -24,6 +25,7 @@
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
+        font-size: 120%;
 
         margin: 0;
         min-height: 100vh;
@@ -39,7 +41,12 @@
 
       p {
         line-height: 1.4;
+        font-weight: var(--lead-font-weight);
         margin: 0 0 0.2rem;
+      }
+
+      strong {
+        font-weight: 500;
       }
 
       p:first-of-type {
@@ -64,6 +71,8 @@
 
         background: var(--text-color);
         color: var(--bg-color);
+        border-radius: 2px;
+        font-weight: 500;
       }
 
       h1 {
@@ -78,6 +87,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-end;
+        font-weight: var(--lead-font-weight);
         margin: 0 0 2rem;
 
         list-style: none;
@@ -98,10 +108,10 @@
 
         overflow: hidden;
 
-        box-shadow: 0 0 2rem rgba(0, 0, 0, 1) inset;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 1) inset;
       }
 
-      @media screen and (max-width: 22rem) {
+      @media screen and (max-width: 32rem) {
         html {
           font-size: 84%;
         }
