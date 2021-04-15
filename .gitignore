@@ -7,3 +7,4 @@
 src/assets/vendor/bower
 .temp
 node_modules
+.idea
